@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 const GlobalStyled = createGlobalStyle`
     html {
         box-sizing: border-box;
+        user-select: none;
     }
 
     ::before, ::after {

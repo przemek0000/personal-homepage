@@ -1,5 +1,5 @@
 import AboutMe from "./about-me/main";
-import Theme from "./theme/main";
+import Theme from "./features/theme/main";
 import { StyledApp } from "./styled";
 
 function App() {
