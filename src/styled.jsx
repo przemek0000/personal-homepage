@@ -9,15 +9,18 @@ const GlobalStyled = createGlobalStyle`
     ::before, ::after {
         box-sizing: inherit;
     }
+
+    body {
+        background-color: #FBFBFE;
+    }
 `
 
 export default GlobalStyled;
 
 export const StyledApp = styled.div`
+    max-width: 1089px;
+    padding: 115px 15px;
     margin: auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    max-width: 100% ;
     background-color: #FBFBFE;
     font-family: 'Inter';
     font-style: normal;

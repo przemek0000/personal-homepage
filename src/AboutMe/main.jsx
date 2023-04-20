@@ -1,3 +1,4 @@
+import Theme from '../features/theme/main';
 import StyledContainer,
 {
     StyledImg, StyledDiv, StyledTitle, StyledName,
@@ -31,6 +32,7 @@ const AboutMe = () => {
                     </StyledContent>
                 </StyledButton>
             </StyledDiv>
+            <Theme />
         </StyledContainer>
     )
 }

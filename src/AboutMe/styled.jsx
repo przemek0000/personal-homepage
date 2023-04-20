@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 const StyledContainer = styled.div`
-    max-width: 1089px;
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 119px 0 73px 353px;
+    grid-template-columns: auto 1fr auto
 `
 
 export default StyledContainer;
@@ -19,9 +17,11 @@ export const StyledImg = styled.img`
 
 export const StyledDiv = styled.div`
     display: flex;
+    position: relative;
+    left: 50px;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 72px;
+    padding-left: 24px;
     padding-top: 64px;
 `
 

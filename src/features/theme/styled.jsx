@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledTheme = styled.div`
-  padding-top: 119px;
+  position: relative;
 `
 
 export default StyledTheme;
@@ -27,7 +27,6 @@ export const StyledSwitch = styled.div`
   border-radius: 32px;
   background: #E5E5E5;
   border: 1px solid rgba(209, 213, 218, 0.3);
-  transition: 300ms; 
 
   &:before {
     transition: 300ms;
@@ -49,9 +48,10 @@ export const StyledInput = styled.input`
   
   &:checked + ${StyledSwitch} {
     
-  &:before {
-      background: #FFFFFF;
-      transform: translate(100%, -50%);
-    }
+    &:before {
+        background: #FFFFFF;
+        transform: translate(100%, -50%);
+        
+     }
   }
 `
