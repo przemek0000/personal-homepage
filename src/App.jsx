@@ -7,8 +7,8 @@ function App() {
   return (
     <StyledApp>
       <AboutMe />
-      <Content />
-      <Content />
+      <Content title="My skillset includes 🛠️"/>
+      <Content title="What I want to learn next 🚀" />
     </StyledApp>
   )
 }

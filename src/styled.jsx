@@ -18,7 +18,7 @@ const GlobalStyled = createGlobalStyle`
 export default GlobalStyled;
 
 export const StyledApp = styled.div`
-    max-width: 1089px;
+    max-width: 1216px;
     padding: 115px 15px;
     margin: auto;
     background-color: #FBFBFE;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledContainer = styled.div`
     display: grid;
-    grid-template-columns: auto 1fr auto
+    grid-template-columns: auto 1fr auto;
 `
 
 export default StyledContainer;
@@ -21,7 +21,7 @@ export const StyledDiv = styled.div`
     left: 50px;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 24px;
+    padding-left: 22px;
     padding-top: 64px;
 `
 
