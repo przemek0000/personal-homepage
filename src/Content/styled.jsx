@@ -22,24 +22,27 @@ export const StyledContent = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-position: inside;
-    padding: 16px 0 0 0;
+    padding: 14px 0 0 0;
     list-style-type: none;
     color: #6E7E91;
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;
+    margin-bottom: 0;
 `
 
 export const StyledLi = styled.li`
- &::before {
-  content: "";
-  display: inline-block; 
-  width: 9px; 
-  height: 9px; 
-  margin-right: 5px; 
-  background-color: #0366D6;;
-  border-radius: 50%;
-  margin-right: 16px;
+    padding: 4px 0;
+
+     &::before {
+     content: "";
+     display: inline-block; 
+      width: 9px; 
+     height: 9px; 
+      margin-right: 5px; 
+     background-color: #0366D6;;
+     border-radius: 50%;
+     margin-right: 16px;
 }
 `
