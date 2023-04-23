@@ -15,7 +15,7 @@ const skillSet = [
     "Error handling",
     "NPM",
     "CSS BEM convention",
-    "Working with API (fetch, axios)",
+    "Working with API (fetch)",
     "React",
     "CSS Grid",
     "JavaScript: ES6+",

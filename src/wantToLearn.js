@@ -1,5 +1,10 @@
 const wantToLearn = [
-    "TypeScript"
+    "TypeScript",
+    "Tanstack Query",
+    "Solid.js",
+    "Rust",
+    "Julia",
+    "Web3"
 ];
 
 export default wantToLearn;
