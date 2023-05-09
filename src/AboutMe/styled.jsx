@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 const StyledContainer = styled.div`
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
 `
 
 export default StyledContainer;
 
+export const StyledImgContainer = styled.div`
+    max-width: 400px;
+`
+
 export const StyledImg = styled.img`
-    width: 384px;
-    height: 384px;
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
     background-size: cover;

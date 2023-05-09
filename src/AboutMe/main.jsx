@@ -3,16 +3,18 @@ import StyledContainer,
 {
     StyledImg, StyledDiv, StyledTitle, StyledName,
     StyledDescription, StyledButton,
-    StyledContent, StyledTick
+    StyledContent, StyledTick, StyledImgContainer
 } from './styled';
 import tick from '../images/tick.svg';
+import me from '../images/me.jpg'
 
 const AboutMe = () => {
-    const imageUrl = "https://ichef.bbci.co.uk/news/976/cpsprodpb/15951/production/_117310488_16.jpg.webp";
 
     return (
         <StyledContainer>
-            <StyledImg src={imageUrl} alt="Image" />
+            <StyledImgContainer>
+                <StyledImg src={me} alt="Image" />
+            </StyledImgContainer>
             <StyledDiv>
                 <StyledTitle >
                     This is

@@ -1,4 +1,7 @@
-import { StyledPortfolio, GitImage, StyledHeader, StyledTitle } from "./styled";
+import {
+    StyledPortfolio, GitImage, StyledHeader, StyledTitle,
+    StyledGridProjects, StyledProject
+} from "./styled";
 
 export const Portfolio = ({ img, title, header }) => {
     return (
@@ -10,6 +13,20 @@ export const Portfolio = ({ img, title, header }) => {
             <StyledHeader>
                 {header}
             </StyledHeader>
+            <StyledGridProjects>
+                <StyledProject>
+                    blaa bla bla
+                </StyledProject>
+                <StyledProject>
+                    blaa bla bla
+                </StyledProject>
+                <StyledProject>
+                    blaa bla bla
+                </StyledProject>
+                <StyledProject>
+                    blaa bla bla
+                </StyledProject>
+            </StyledGridProjects>
         </StyledPortfolio>
     )
 }
