@@ -64,6 +64,8 @@ export const StyledButton = styled.button`
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    letter-spacing: 0.05em;
+    padding: 12px 16px;
 `
 
 export const StyledIcon = styled.div`
@@ -76,10 +78,10 @@ export const StyledIcon = styled.div`
 
 export const StyledContent = styled.div`
     white-space: nowrap;
-    margin: 12px 16px 12px 0;
+    
 `
 
 export const StyledTick = styled.img`
-    margin: -10px -15px -12px -15px;
     color: white;
+    
 `
