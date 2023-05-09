@@ -68,14 +68,6 @@ export const StyledButton = styled.button`
     padding: 12px 16px;
 `
 
-export const StyledIcon = styled.div`
-    margin: 12.5px 0 12.5px 16px;
-    padding: 0 4px;
-    border: 2px solid #FFFFFF;
-    border-radius: 25%;
-    font-weight: 200;
-`
-
 export const StyledContent = styled.div`
     white-space: nowrap;
     

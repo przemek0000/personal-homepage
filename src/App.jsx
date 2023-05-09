@@ -1,10 +1,11 @@
 
-import { StyledApp, GitImage } from "./styled";
-import github  from "./images/github.svg";
+import { StyledApp } from "./styled";
+import github from "./images/github.svg";
 import AboutMe from "./AboutMe/main";
 import Content from "./Content/main";
 import skillSet from "./skillset";
 import wantToLearn from "./wantToLearn";
+import Portfolio from "./Portfolio";
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
       <AboutMe />
       <Content title="My skillset includes 🛠️" content={skillSet} />
       <Content title="What I want to learn next 🚀" content={wantToLearn} />
-      <GitImage src={github} alt="Image" />
+      <Portfolio img={github} title="Portfolio" header="My recent projects"/>
     </StyledApp>
   )
 }
