@@ -6,16 +6,26 @@ export const StyledDiv = styled.div`
     border-radius: 4px;
     margin: 36px 0;
     padding: 32px;
+
+     @media(max-width: 1260px) {
+        margin: ${({ theme }) => 36 * theme.width / 1260}px;
+        padding: ${({ theme }) => 32 * theme.width / 1260}px;
+    }    
 `
 
 export const StyledTitle = styled.div`
     font-weight: 900;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 36px;
     letter-spacing: 0.05em;
     color: #252525;
     border-bottom: 2px rgba(209, 213, 218, 0.3) solid;
     padding-bottom: 15px;
+
+    @media(max-width: 1260px) {
+        font-size: ${({ theme }) => 36 * theme.width / 1260}px;
+        padding-bottom: ${({ theme }) => 15 * theme.width / 1260}px;
+    }
 `
 
 export const StyledContent = styled.ul`
@@ -30,6 +40,11 @@ export const StyledContent = styled.ul`
     line-height: 140%;
     letter-spacing: 0.05em;
     margin-bottom: 0;
+
+    @media(max-width: 1260px) {
+        font-size: ${({ theme }) => 18 * theme.width / 1260}px;
+        padding: ${({ theme }) => 14 * theme.width / 1260}px 0 0 0;
+    }
 `
 
 export const StyledLi = styled.li`
@@ -38,11 +53,16 @@ export const StyledLi = styled.li`
      &::before {
      content: "";
      display: inline-block; 
-      width: 9px; 
+     width: 9px; 
      height: 9px; 
-      margin-right: 5px; 
      background-color: #0366D6;;
      border-radius: 50%;
      margin-right: 16px;
+
+     @media(max-width: 1260px) {
+        width: ${({ theme }) => 9 * theme.width / 1260}px; 
+        height: ${({ theme }) => 9 * theme.width / 1260}px;
+        margin-right: ${({ theme }) => 16 * theme.width / 1260}px;
+    }
 }
 `

@@ -4,6 +4,7 @@ import {
 } from "./styled";
 
 export const Portfolio = ({ img, title, header }) => {
+   
     return (
         <StyledPortfolio>
             <GitImage src={img} alt="github" />

@@ -1,9 +1,6 @@
 import { StyledDiv, StyledTitle, StyledContent, StyledLi } from './styled';
 
 const Content = ({ title, content }) => {
-    let list = "";
-
-    console.log(list)
 
     if (content) {
         return (

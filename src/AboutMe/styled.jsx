@@ -8,6 +8,7 @@ export default StyledContainer;
 
 export const StyledImgContainer = styled.div`
     max-width: 400px;
+    min-width: 133px;
 `
 
 export const StyledImg = styled.img`
@@ -18,6 +19,7 @@ export const StyledImg = styled.img`
 `
 
 export const StyledDiv = styled.div`
+    min-width: 275px;
     display: flex;
     position: relative;
     left: 50px;
@@ -33,6 +35,10 @@ export const StyledTitle = styled.div`
     line-height: 130%;
     text-transform: uppercase;
     color: #6E7E91;
+
+    @media(max-width: 1260px) {
+        font-size: 1vw;
+    }
 `
 
 export const StyledName = styled.div`
@@ -42,6 +48,10 @@ export const StyledName = styled.div`
     letter-spacing: 0.05em;
     color: #252525;
     padding: 12px 0 35px;
+
+    @media(max-width: 1260px) {
+        font-size: 3vw;
+    }
 `
 
 export const StyledDescription = styled.div`
@@ -51,6 +61,10 @@ export const StyledDescription = styled.div`
     letter-spacing: 0.05em;
     color: #6E7E91;
     padding: 0 0 32px;
+    
+    @media(max-width: 1260px) {
+        font-size: 1.5vw;
+    }
 `
 
 export const StyledButton = styled.button`

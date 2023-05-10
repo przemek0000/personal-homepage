@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledTheme = styled.div`
   position: relative;
+  white-space: nowrap;
 `
 
 export default StyledTheme;
