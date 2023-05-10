@@ -19,6 +19,10 @@ export const StyledSpan = styled.span`
   line-height: 130%;
   text-transform: uppercase;
   color: #6E7E91;
+
+  @media(max-width: 1260px) {
+    font-size: ${({ theme }) => 12 * theme.width / 1260}px;
+    }    
 `
 
 export const StyledSwitch = styled.div`
@@ -28,6 +32,12 @@ export const StyledSwitch = styled.div`
   border-radius: 32px;
   background: #E5E5E5;
   border: 1px solid rgba(209, 213, 218, 0.3);
+
+  @media(max-width: 1260px) {
+    width: ${({ theme }) => 48 * theme.width / 1260}px;
+    height: ${({ theme }) => 26 * theme.width / 1260}px;
+    border-radius: ${({ theme }) => 26 * theme.width / 1260}px;
+    }    
 
   &:before {
     transition: 300ms;
@@ -40,6 +50,12 @@ export const StyledSwitch = styled.div`
     left: 4px;
     background: #6E7E91;
     transform: translate(0, -50%);
+
+    @media(max-width: 1260px) {
+    border-radius: ${({ theme }) => 35 * theme.width / 1260}px;
+    width: ${({ theme }) => 20 * theme.width / 1260}px;
+    height: ${({ theme }) => 20 * theme.width / 1260}px;
+    }    
   }
 `
 

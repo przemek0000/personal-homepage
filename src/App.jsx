@@ -20,8 +20,8 @@ function App() {
         width: window.innerWidth,
       })
     })
-  }, [])
-  console.log(dimention.width)
+  },[])
+ 
   const theme = {
     width: dimention.width
   }
@@ -30,7 +30,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <StyledApp>
         <AboutMe />
-        <Content title="My skillset includes 🛠️" content={skillSet} />
+        <Content title="My skillset includes 🛠️" content={skillSet}/>
         <Content title="What I want to learn next 🚀" content={wantToLearn} />
         <Portfolio img={github} title="Portfolio" header="My recent projects" />
       </StyledApp>

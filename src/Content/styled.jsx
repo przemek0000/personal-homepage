@@ -8,7 +8,7 @@ export const StyledDiv = styled.div`
     padding: 32px;
 
      @media(max-width: 1260px) {
-        margin: ${({ theme }) => 36 * theme.width / 1260}px;
+        margin: ${({ theme }) => 36 * theme.width / 1260}px 0;
         padding: ${({ theme }) => 32 * theme.width / 1260}px;
     }    
 `
@@ -25,6 +25,7 @@ export const StyledTitle = styled.div`
     @media(max-width: 1260px) {
         font-size: ${({ theme }) => 36 * theme.width / 1260}px;
         padding-bottom: ${({ theme }) => 15 * theme.width / 1260}px;
+        font-size: ${props => props.dimention / 1260}px
     }
 `
 

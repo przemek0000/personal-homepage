@@ -1,6 +1,6 @@
 import { StyledDiv, StyledTitle, StyledContent, StyledLi } from './styled';
 
-const Content = ({ title, content }) => {
+const Content = ({ title, content, dimention }) => {
 
     if (content) {
         return (
