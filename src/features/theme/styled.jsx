@@ -21,8 +21,8 @@ export const StyledSpan = styled.span`
   color: #6E7E91;
 
   @media(max-width: 1260px) {
-    font-size: ${({ theme }) => 12 * theme.width / 1260}px;
-    }    
+        font-size: calc(12 / 1260 * 100vw);
+    }
 `
 
 export const StyledSwitch = styled.div`
@@ -34,10 +34,9 @@ export const StyledSwitch = styled.div`
   border: 1px solid rgba(209, 213, 218, 0.3);
 
   @media(max-width: 1260px) {
-    width: ${({ theme }) => 48 * theme.width / 1260}px;
-    height: ${({ theme }) => 26 * theme.width / 1260}px;
-    border-radius: ${({ theme }) => 26 * theme.width / 1260}px;
-    }    
+       width: calc(48 / 1260 * 100vw);
+       height: calc(26 / 1260 * 100vw);
+    }
 
   &:before {
     transition: 300ms;
@@ -52,10 +51,9 @@ export const StyledSwitch = styled.div`
     transform: translate(0, -50%);
 
     @media(max-width: 1260px) {
-    border-radius: ${({ theme }) => 35 * theme.width / 1260}px;
-    width: ${({ theme }) => 20 * theme.width / 1260}px;
-    height: ${({ theme }) => 20 * theme.width / 1260}px;
-    }    
+        width: calc(20 / 1260 * 100vw);
+        height: calc(20 / 1260 * 100vw);
+    }
   }
 `
 

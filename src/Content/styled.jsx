@@ -7,10 +7,10 @@ export const StyledDiv = styled.div`
     margin: 36px 0;
     padding: 32px;
 
-     @media(max-width: 1260px) {
-        margin: ${({ theme }) => 36 * theme.width / 1260}px 0;
-        padding: ${({ theme }) => 32 * theme.width / 1260}px;
-    }    
+    @media(max-width: 1260px) {
+        margin: calc(36 / 1260 * 100vw) 0;
+        padding: calc(32 / 1260 * 100vw);
+    }
 `
 
 export const StyledTitle = styled.div`
@@ -23,9 +23,8 @@ export const StyledTitle = styled.div`
     padding-bottom: 15px;
 
     @media(max-width: 1260px) {
-        font-size: ${({ theme }) => 36 * theme.width / 1260}px;
-        padding-bottom: ${({ theme }) => 15 * theme.width / 1260}px;
-        font-size: ${props => props.dimention / 1260}px
+        font-size: calc(36 / 1260 * 100vw);
+        padding-bottom: calc(15 / 1260 * 100vw);
     }
 `
 
@@ -43,8 +42,8 @@ export const StyledContent = styled.ul`
     margin-bottom: 0;
 
     @media(max-width: 1260px) {
-        font-size: ${({ theme }) => 18 * theme.width / 1260}px;
-        padding: ${({ theme }) => 14 * theme.width / 1260}px 0 0 0;
+        font-size: calc(18 / 1260 * 100vw);
+        padding: calc(14 / 1260 * 100vw) 0 0 0;
     }
 `
 
@@ -61,9 +60,9 @@ export const StyledLi = styled.li`
      margin-right: 16px;
 
      @media(max-width: 1260px) {
-        width: ${({ theme }) => 9 * theme.width / 1260}px; 
-        height: ${({ theme }) => 9 * theme.width / 1260}px;
-        margin-right: ${({ theme }) => 16 * theme.width / 1260}px;
+        width: calc(9 / 1260 * 100vw);
+        height: calc(9 / 1260 * 100vw);
+        margin-right: calc(16 / 1260 * 100vw);
     }
 }
 `

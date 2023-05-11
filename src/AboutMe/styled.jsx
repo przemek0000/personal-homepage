@@ -29,10 +29,10 @@ export const StyledDiv = styled.div`
     padding-top: 64px;
 
     @media(max-width: 1260px) {
-        padding-left: ${({ theme }) => 22 * theme.width / 1260}px;
-        padding-top: ${({ theme }) => 64 * theme.width / 1260}px;
-        left: ${({ theme }) => 50 * theme.width / 1260}px;
-    }    
+        padding-left: calc(22 / 1260 * 100vw);
+        padding-top: calc(64 / 1260 * 100vw);
+        left: calc(50 / 1260 * 100vw);
+    }
 `
 
 export const StyledTitle = styled.div`
@@ -43,7 +43,7 @@ export const StyledTitle = styled.div`
     color: #6E7E91;
 
     @media(max-width: 1260px) {
-        font-size: ${({ theme }) => 12 * theme.width / 1260}px;
+       font-size: calc(12 / 1260 * 100vw);
     }
 `
 
@@ -56,8 +56,8 @@ export const StyledName = styled.div`
     padding: 12px 0 35px;
 
     @media(max-width: 1260px) {
-        font-size: ${({ theme }) => 38 * theme.width / 1260}px;
-        padding: ${({ theme }) => 12 * theme.width / 1260}px 0 ${({ theme }) => 35 * theme.width / 1260}px;
+       font-size: calc(38 / 1260 * 100vw);
+       padding: calc(12 / 1260 * 100vw) 0 calc(35 / 1260 * 100vw);
     }
 `
 
@@ -68,10 +68,10 @@ export const StyledDescription = styled.div`
     letter-spacing: 0.05em;
     color: #6E7E91;
     padding: 0 0 32px;
-    
+
     @media(max-width: 1260px) {
-        font-size: ${({ theme }) => 20 * theme.width / 1260}px;
-        padding: 0 0 ${({ theme }) => 35 * theme.width / 1260}px;
+       font-size: calc(20 / 1260 * 100vw);
+       padding: 0 0 calc(32 / 1260 * 100vw);
     }
 `
 
@@ -92,9 +92,9 @@ export const StyledButton = styled.button`
     padding: 12px 16px;
 
     @media(max-width: 1260px) {
-        gap: ${({ theme }) => 16 * theme.width / 1260}px;
-        font-size: ${({ theme }) => 20 * theme.width / 1260}px;
-        padding: ${({ theme }) => 12 * theme.width / 1260}px ${({ theme }) => 16 * theme.width / 1260}px;
+       gap: calc(16 / 1260 * 100vw);
+       font-size: calc(20 / 1260 * 100vw);
+       padding: calc(12 / 1260 * 100vw) calc(16 / 1260 * 100vw);
     }
 `
 
@@ -109,7 +109,7 @@ export const StyledTick = styled.img`
     height: 20px;
 
     @media(max-width: 1260px) {
-        width: ${({ theme }) => 23 * theme.width / 1260}px;
-        height: ${({ theme }) => 20 * theme.width / 1260}px;
+        width: calc(23 / 1260 * 100vw);
+        height: calc(20 / 1260 * 100vw);
     }
 `
