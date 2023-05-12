@@ -25,6 +25,6 @@ const projectsSlice = createSlice({
 const selectProjectsState = (state) => state.projects;
 
 export const selectProjects = (state) => selectProjectsState(state).projects;
-export const selectProjectsStatus = state => selectProjects(state).status;
+export const selectProjectsStatus = (state) => selectProjectsState(state).status;
 export const {axiosProjectsLoading, axiosPojectsSuccess, axiosProjectsError} = projectsSlice.actions;
 export default projectsSlice.reducer;
