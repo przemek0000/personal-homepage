@@ -8,6 +8,7 @@ import { selectProjects, selectProjectsStatus } from "../features/api/getProject
 
 const displayProjects = (getProjects) => {
     console.log(getProjects)
+    
     return (
         <StyledGridProjects>
             {getProjects.map(project => (
