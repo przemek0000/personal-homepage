@@ -1,14 +1,51 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import {
     StyledPortfolio, GitImage, StyledHeader, StyledTitle,
-    StyledGridProjects, StyledProject
+    StyledGridProjects, StyledProject, StyledProjectTitle,
+    StyledProjectDescription, StyledProjectLinks, StyledProjectLink
 } from "./styled";
-import { axiosPojectsSuccess, selectProjects } from "../features/api/getProjectsSlice";
+import { selectProjects, selectProjectsStatus } from "../features/api/getProjectsSlice";
+
+const displayProjects = (getProjects) => {
+    console.log(getProjects)
+    return (
+        <StyledGridProjects>
+            {getProjects.map(project => (
+                <StyledProject key={project.id}>
+                    <StyledProjectTitle>
+                        {project.name}
+                    </StyledProjectTitle>
+                    <StyledProjectDescription>
+                        {project.description}
+                    </StyledProjectDescription>
+                    <StyledProjectLinks>
+                        Demo:
+                        <StyledProjectLink href={`/${project.full_homepage}`} target="_blank" rel="noreferrer">
+                            https://link.demo.com
+                        </StyledProjectLink>
+                    </StyledProjectLinks>
+                    <StyledProjectLinks>
+                        Code:
+                        <StyledProjectLink href={`${project.html_url}`} target="_blank" rel="noreferrer">
+                            https://link.code.com
+                        </StyledProjectLink>
+                    </StyledProjectLinks>
+                </StyledProject>
+            ))}
+        </StyledGridProjects>
+    )
+}
+
+const displayLoading = () => {
+    return (
+        <div>Loading</div>
+    )
+}
 
 export const Portfolio = ({ img, title, header }) => {
-    const geApiRedux = useSelector(selectProjects);
-     console.log(geApiRedux)
-   
+    const getStatus = useSelector(selectProjectsStatus);
+    const getProjects = useSelector(selectProjects);
+
     return (
         <StyledPortfolio>
             <GitImage src={img} alt="github" />
@@ -18,12 +55,7 @@ export const Portfolio = ({ img, title, header }) => {
             <StyledHeader>
                 {header}
             </StyledHeader>
-            <StyledGridProjects>
-                <StyledProject>
-                    blaa bla bla
-                </StyledProject>
-               {}
-            </StyledGridProjects>
+            {getStatus === "success" ? displayProjects(getProjects) : displayLoading()}
         </StyledPortfolio>
     )
 }
