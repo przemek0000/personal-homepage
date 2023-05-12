@@ -9,6 +9,11 @@ export const StyledPortfolio = styled.div`
 export const GitImage = styled.img`
     width: 40px;
     height: 40px;
+
+    @media(max-width: 1260px) {
+        width: calc(40 / 1260 * 100vw);
+        height: calc(40 / 1260 * 100vw);
+    }
 `
 
 export const StyledTitle = styled.div`
@@ -17,6 +22,11 @@ export const StyledTitle = styled.div`
     line-height: 36px;
     letter-spacing: 0.05em;
     margin: 12px 0 8px 0;
+
+    @media(max-width: 1260px) {
+        font-size: calc(30 / 1260 * 100vw);
+        margin: calc(12 / 1260 * 100vw) 0 calc(8 / 1260 * 100vw) 0;
+    }
 `
 
 export const StyledHeader = styled.div`
@@ -25,6 +35,11 @@ export const StyledHeader = styled.div`
     line-height: 140%;
     letter-spacing: 0.05em;
     margin-bottom: 24px;
+
+    @media(max-width: 1260px) {
+        font-size: calc(20 / 1260 * 100vw);
+        margin-bottom: calc(24 / 1260 * 100vw);
+    }
 `
 
 export const StyledGridProjects = styled.div`

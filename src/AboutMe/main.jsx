@@ -7,8 +7,6 @@ import StyledContainer,
 } from './styled';
 import tick from '../images/tick.svg';
 import me from '../images/me.jpg'
-import { useState } from 'react';
-import { useEffect } from 'react';
 
 const AboutMe = () => {
     
