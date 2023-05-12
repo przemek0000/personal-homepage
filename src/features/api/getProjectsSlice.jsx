@@ -7,13 +7,14 @@ const projectsSlice = createSlice({
         status: "initial"
     },
     reducers: {
-        axiosProjectsLoading: (_, { paylaod: projects}) => ({
+        axiosProjectsLoading: (_, { payload: projects}) => ({
             projects,
             status: "loading",
         }),
-        axiosPojectsSuccess: (_, { paylaod: projects }) => {
-            console.log(projects)
-        },
+        axiosPojectsSuccess: (_, { payload: projects }) => ({
+            projects,
+            status: "success"
+        }),
         axiosProjectsError: () => ({
             projects: [],
             status: "error"
