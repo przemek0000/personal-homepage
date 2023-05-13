@@ -43,13 +43,14 @@ const displayLoading = () => {
     )
 }
 
-export const Portfolio = ({ img, title, header }) => {
+export const Portfolio = ({ GitHubIcon, title, header }) => {
     const getStatus = useSelector(selectProjectsStatus);
     const getProjects = useSelector(selectProjects);
 
     return (
         <StyledPortfolio>
-            <GitImage src={img} alt="github" />
+            {/* <GitImage src={img} alt="github" /> */}
+            {GitHubIcon}
             <StyledTitle>
                 {title}
             </StyledTitle>

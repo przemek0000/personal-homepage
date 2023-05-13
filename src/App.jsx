@@ -1,10 +1,11 @@
 
-import github from "./images/github.svg";
+import GitHubIcon from "./images/main";
 import AboutMe from "./AboutMe/main";
 import Content from "./Content/main";
 import skillSet from "./skillset";
 import wantToLearn from "./wantToLearn";
-import Portfolio from "./Portfolio";
+import Portfolio from "./Portfolio/main";
+import Footer from "./Footer/main"
 import { useDispatch } from "react-redux";
 import { StyledApp } from "./styled";
 import { useEffect } from "react";
@@ -21,7 +22,8 @@ function App() {
           <AboutMe />
           <Content title="My skillset includes 🛠️" content={skillSet} />
           <Content title="What I want to learn next 🚀" content={wantToLearn} />
-          <Portfolio img={github} title="Portfolio" header="My recent projects" />
+          <Portfolio GitHubIcon={<GitHubIcon fill="#0366D6"/>} title="Portfolio" header="My recent projects" />
+          <Footer GitHubIcon={<GitHubIcon fill="#252525"/>}/>
         </StyledApp>
   )
 }

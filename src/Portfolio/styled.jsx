@@ -25,6 +25,7 @@ export const StyledTitle = styled.div`
 
     @media(max-width: 1260px) {
         font-size: calc(30 / 1260 * 100vw);
+        line-height: calc(36 / 1260 * 100vw);
         margin: calc(12 / 1260 * 100vw) 0 calc(8 / 1260 * 100vw) 0;
     }
 `
@@ -46,6 +47,10 @@ export const StyledGridProjects = styled.div`
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
+
+    @media(max-width: 1260px) {
+        gap: calc(32 / 1260 * 100vw);
+    }
 `
 
 export const StyledProject = styled.div`
@@ -57,8 +62,17 @@ export const StyledProject = styled.div`
     border-radius: 4px;
     transition: 0.2s ;
 
+    @media(max-width: 1260px) {
+        padding: calc(56 / 1260 * 100vw);
+        border: calc(6 / 1260 * 100vw) solid rgba(209, 213, 218, 0.3);
+    }
+
     &:hover{
-        border: 6px solid black;
+        border: 6px solid rgb(3, 102, 214, 0.2);
+
+        @media(max-width: 1260px) {
+        border: calc(6 / 1260 * 100vw) solid rgb(3, 102, 214, 0.2);
+    }
     }
 `
 
@@ -70,6 +84,12 @@ export const StyledProjectTitle = styled.div`
     letter-spacing: 0.05em;
     color: #0366D6;
     text-transform: capitalize;
+
+    @media(max-width: 1260px) {
+        margin-bottom: calc(24 / 1260 * 100vw);
+        font-size: calc(24 / 1260 * 100vw);
+        line-height: calc(29 / 1260 * 100vw);
+    }
 `
 
 export const StyledProjectDescription = styled.div`
@@ -80,6 +100,11 @@ export const StyledProjectDescription = styled.div`
     align-items: center;
     color: #6E7E91;
     padding-bottom: 16px;
+
+    @media(max-width: 1260px) {
+        font-size: calc(18 / 1260 * 100vw);
+        padding-bottom: calc(16 / 1260 * 100vw);
+    }
 `
 
 export const StyledProjectLinks = styled.div`
@@ -93,6 +118,12 @@ export const StyledProjectLinks = styled.div`
     align-items: center;
     letter-spacing: 0.05em;
     color: #6E7E91;
+
+    @media(max-width: 1260px) {
+        gap: calc(8 / 1260 * 100vw);
+        padding: calc(8 / 1260 * 100vw) 0;
+        font-size: calc(18 / 1260 * 100vw);
+    }
 `
 
 export const StyledProjectLink = styled.a`
@@ -103,4 +134,8 @@ export const StyledProjectLink = styled.a`
     color: #0366D6;
     text-decoration: none;
     border-bottom: 1px solid rgb(3, 102, 214, 0.2);
+
+    @media(max-width: 1260px) {
+        font-size: calc(18 / 1260 * 100vw);
+    }
 `
