@@ -131,7 +131,7 @@ export const StyledProjectLink = styled.a`
     font-size: 18px;
     line-height: 140%;
     align-items: center;
-    color: #0366D6;
+    color: #2188FF;
     text-decoration: none;
     border-bottom: 1px solid rgb(3, 102, 214, 0.2);
 

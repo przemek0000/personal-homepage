@@ -4,13 +4,15 @@ import {
 } from "./styled";
 
 const Footer = ({ GitHubIcon }) => {
+    const email = "test@email.gmail"
+    
     return (
         <StyledFooter>
             <StyledTitle>
                 Let's talk!
             </StyledTitle>
-            <StyledEmail as="a" href="test@email.gmail">
-                test@email.gmail
+            <StyledEmail href={`mailto:${email}`}>
+               {email}
             </StyledEmail>
             <StyledDescription>
                 I'm always open to new projects whenever I have the time.

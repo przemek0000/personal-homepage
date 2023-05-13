@@ -25,7 +25,7 @@ const AboutMe = () => {
                 <StyledDescription>
                     I spend every free time to improve my React skills. If You are interested work with me just let me know.
                 </StyledDescription>
-                <StyledButton>
+                <StyledButton href='mailto:blabla@gmail.com'>
                     <StyledTick src={tick} alt="tick" />
                     <StyledContent>
                         Hire Me

@@ -75,7 +75,7 @@ export const StyledDescription = styled.div`
     }
 `
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.a`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -90,6 +90,16 @@ export const StyledButton = styled.button`
     line-height: 24px;
     letter-spacing: 0.05em;
     padding: 12px 16px;
+    text-decoration: none;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
+    }
+
+    &:active{
+        box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
+    }
 
     @media(max-width: 1260px) {
        gap: calc(16 / 1260 * 100vw);

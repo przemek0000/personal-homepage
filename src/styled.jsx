@@ -1,4 +1,5 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
+import { ReactComponent as Icon } from './images/githubicon.svg'
 
 const GlobalStyled = createGlobalStyle`
     html {
@@ -24,4 +25,19 @@ export const StyledApp = styled.div`
     background-color: #FBFBFE;
     font-family: 'Inter';
     font-style: normal;
+`
+
+export const StyledGitHubIcon = styled(Icon)`
+    ${({ link }) => !link && css`
+    color: #0366D6
+    `}
+
+    ${({ link }) => link && css`
+    color: #252525;
+    
+         &:hover {
+        color: #0366D6;
+    }
+    `}
+   
 `

@@ -25,7 +25,7 @@ export const StyledTitle = styled.div`
     }
 `
 
-export const StyledEmail = styled.div`
+export const StyledEmail = styled.a`
     font-weight: 900;
     font-size: 32px;
     line-height: 39px;
@@ -38,8 +38,7 @@ export const StyledEmail = styled.div`
     }
 
     &:hover {
-        color: #2517EB;
-;
+        color: #0366D6;
     }
 `
 
