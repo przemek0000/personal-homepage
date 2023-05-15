@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { ReactComponent as DarkMode} from "../../images/darkmode.svg";
+import darkModeIcon from "../../images/darkmode.svg";
+import lightModeIcon from "../../images/lightmode.svg";
 
 const StyledTheme = styled.div`
   position: relative;
@@ -48,11 +51,17 @@ export const StyledSwitch = styled.div`
     top: 50%;
     left: 4px;
     background: #6E7E91;
+    background-image: url(${darkModeIcon});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
     transform: translate(0, -50%);
 
     @media(max-width: 1260px) {
         width: calc(20 / 1260 * 100vw);
         height: calc(20 / 1260 * 100vw);
+        left: calc(4 / 1260 * 100vw);
+        background-size: calc(14 / 1260 * 100vw) calc(14 / 1260 * 100vw);
     }
   }
 `
@@ -60,13 +69,26 @@ export const StyledSwitch = styled.div`
 export const StyledInput = styled.input`
   opacity: 0;
   position: relative;
-  
+  width: 12px;
+
   &:checked + ${StyledSwitch} {
     
     &:before {
-        background: #FFFFFF;
+        background: #6E7E91;
         transform: translate(100%, -50%);
-        
+        background-image: url(${lightModeIcon});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+        background-color: #FFFFFF;
+
+        @media(max-width: 1260px) {
+        background-size: calc(14 / 1260 * 100vw) calc(14 / 1260 * 100vw);
+    }
      }
   }
+  @media(max-width: 1260px) {
+        width: calc(12 / 1260 * 100vw);
+        background-size: calc(14 / 1260 * 100vw) calc(14 / 1260 * 100vw);
+    }
 `

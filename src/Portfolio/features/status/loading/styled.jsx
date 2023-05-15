@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const StyledTitle = styled.div`
     margin: 64px 0 48px 0;
@@ -13,23 +13,23 @@ export const StyledTitle = styled.div`
     }
 `
 
+const rotate = keyframes`
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+`
+
 export const StyledLoadingAnimation = styled.div`
   width: 160px;
   height: 160px;
   border: 12px solid #D1D5DA4D;
   border-top: 12px solid #0366D6;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: ${rotate} 1s linear infinite;
   transition: 0.5s;
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 
   @media(max-width: 1260px) {
         width: calc(160 / 1260 * 100vw);
