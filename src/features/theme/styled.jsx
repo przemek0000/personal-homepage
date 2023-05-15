@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import { ReactComponent as DarkMode} from "../../images/darkmode.svg";
 import darkModeIcon from "../../images/darkmode.svg";
 import lightModeIcon from "../../images/lightmode.svg";
 
 const StyledTheme = styled.div`
-  position: relative;
   white-space: nowrap;
 `
 
@@ -22,9 +20,11 @@ export const StyledSpan = styled.span`
   line-height: 130%;
   text-transform: uppercase;
   color: #6E7E91;
+  width: 100px;
 
   @media(max-width: 1260px) {
         font-size: calc(12 / 1260 * 100vw);
+        width: calc(100 / 1260 * 100vw);
     }
 `
 
