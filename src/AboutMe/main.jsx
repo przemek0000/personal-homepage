@@ -8,8 +8,8 @@ import StyledContainer,
 import tick from '../images/tick.svg';
 import me from '../images/me.jpg'
 
-const AboutMe = () => {
-    
+const AboutMe = ({ email }) => {
+
     return (
         <StyledContainer>
             <StyledImgContainer>
@@ -25,7 +25,7 @@ const AboutMe = () => {
                 <StyledDescription>
                     I spend every free time to improve my React skills. If You are interested work with me just let me know.
                 </StyledDescription>
-                <StyledButton href='mailto:blabla@gmail.com'>
+                <StyledButton href={`mailto:${email}`}>
                     <StyledTick src={tick} alt="tick" />
                     <StyledContent>
                         Hire Me

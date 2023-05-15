@@ -29,7 +29,12 @@ export const StyledApp = styled.div`
 
 export const StyledGitHubIcon = styled(Icon)`
     ${({ link }) => !link && css`
-    color: #0366D6
+    color: #0366D6;
+
+    @media(max-width: 1260px) {
+        width: calc(48 / 1260 * 100vw);
+        height: calc(48 / 1260 * 100vw);    
+    }
     `}
 
     ${({ link }) => link && css`
@@ -37,6 +42,11 @@ export const StyledGitHubIcon = styled(Icon)`
     
          &:hover {
         color: #0366D6;
+    }
+
+    @media(max-width: 1260px) {
+        width: calc(48 / 1260 * 100vw);
+        height: calc(48 / 1260 * 100vw);    
     }
     `}
    

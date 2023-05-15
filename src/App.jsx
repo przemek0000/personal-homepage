@@ -11,6 +11,7 @@ import { axiosProjectsLoading } from "./features/api/getProjectsSlice";
 import { StyledGitHubIcon } from "./styled";
 
 function App() {
+  const email = "test@email.gmail"
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(axiosProjectsLoading())
@@ -18,11 +19,11 @@ function App() {
 
   return (
     <StyledApp>
-      <AboutMe />
+      <AboutMe email={email} />
       <Content title="My skillset includes 🛠️" content={skillSet} />
       <Content title="What I want to learn next 🚀" content={wantToLearn} />
-      <Portfolio GitHubIcon={ <StyledGitHubIcon />} title="Portfolio" header="My recent projects" />
-      <Footer GitHubIcon={ <StyledGitHubIcon link="active"/>} />
+      <Portfolio GitHubIcon={<StyledGitHubIcon />} title="Portfolio" header="My recent projects" />
+      <Footer GitHubIcon={<StyledGitHubIcon link="active" />} email={email} />
     </StyledApp>
   )
 }

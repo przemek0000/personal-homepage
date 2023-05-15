@@ -1,14 +1,15 @@
 import { useSelector } from "react-redux";
 import {
-    StyledPortfolio, GitImage, StyledHeader, StyledTitle,
+    StyledPortfolio, StyledHeader, StyledTitle,
     StyledGridProjects, StyledProject, StyledProjectTitle,
     StyledProjectDescription, StyledProjectLinks, StyledProjectLink
 } from "./styled";
 import { selectProjects, selectProjectsStatus } from "../features/api/getProjectsSlice";
+import displayLoading from "./features/status/loading";
 
 const displayProjects = (getProjects) => {
     console.log(getProjects)
-    
+
     return (
         <StyledGridProjects>
             {getProjects.map(project => (
@@ -21,7 +22,7 @@ const displayProjects = (getProjects) => {
                     </StyledProjectDescription>
                     <StyledProjectLinks>
                         Demo:
-                        <StyledProjectLink href={`/${project.full_homepage}`} target="_blank" rel="noreferrer">
+                        <StyledProjectLink href={`${project.homepage}`} target="_blank" rel="noreferrer">
                             https://link.demo.com
                         </StyledProjectLink>
                     </StyledProjectLinks>
@@ -37,9 +38,9 @@ const displayProjects = (getProjects) => {
     )
 }
 
-const displayLoading = () => {
+const displayError = () => {
     return (
-        <div>Loading</div>
+        <div>Error</div>
     )
 }
 
@@ -49,7 +50,6 @@ export const Portfolio = ({ GitHubIcon, title, header }) => {
 
     return (
         <StyledPortfolio>
-            {/* <GitImage src={img} alt="github" /> */}
             {GitHubIcon}
             <StyledTitle>
                 {title}
@@ -57,7 +57,13 @@ export const Portfolio = ({ GitHubIcon, title, header }) => {
             <StyledHeader>
                 {header}
             </StyledHeader>
-            {getStatus === "success" ? displayProjects(getProjects) : displayLoading()}
+            {getStatus === "success" ?
+                displayProjects(getProjects) :
+                getStatus === "loading" ?
+                    displayLoading() :
+                    getStatus === "error" ?
+                        displayError() : ""
+            }
         </StyledPortfolio>
     )
 }
