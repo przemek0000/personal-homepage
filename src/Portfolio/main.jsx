@@ -5,11 +5,10 @@ import {
     StyledProjectDescription, StyledProjectLinks, StyledProjectLink
 } from "./styled";
 import { selectProjects, selectProjectsStatus } from "../features/api/getProjectsSlice";
-import displayLoading from "./features/status/loading";
+import displayLoading from "./features/status/loading/main";
+import displayError from "./features/status/error/main";
 
 const displayProjects = (getProjects) => {
-    console.log(getProjects)
-
     return (
         <StyledGridProjects>
             {getProjects.map(project => (
@@ -38,13 +37,7 @@ const displayProjects = (getProjects) => {
     )
 }
 
-const displayError = () => {
-    return (
-        <div>Error</div>
-    )
-}
-
-export const Portfolio = ({ GitHubIcon, title, header }) => {
+export const Portfolio = ({ GitHubIcon, title, header, git }) => {
     const getStatus = useSelector(selectProjectsStatus);
     const getProjects = useSelector(selectProjects);
 
@@ -62,7 +55,7 @@ export const Portfolio = ({ GitHubIcon, title, header }) => {
                 getStatus === "loading" ?
                     displayLoading() :
                     getStatus === "error" ?
-                        displayError() : ""
+                        displayError(git) : ""
             }
         </StyledPortfolio>
     )

@@ -12,7 +12,9 @@ import { StyledGitHubIcon } from "./styled";
 
 function App() {
   const email = "test@email.gmail"
+  const git = "https://github.com/przemek0000";
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(axiosProjectsLoading())
   }, [dispatch])
@@ -22,8 +24,8 @@ function App() {
       <AboutMe email={email} />
       <Content title="My skillset includes 🛠️" content={skillSet} />
       <Content title="What I want to learn next 🚀" content={wantToLearn} />
-      <Portfolio GitHubIcon={<StyledGitHubIcon />} title="Portfolio" header="My recent projects" />
-      <Footer GitHubIcon={<StyledGitHubIcon link="active" />} email={email} />
+      <Portfolio GitHubIcon={<StyledGitHubIcon />} title="Portfolio" header="My recent projects" git={git} />
+      <Footer GitHubIcon={<StyledGitHubIcon link="active" />} email={email} git={git} />
     </StyledApp>
   )
 }
