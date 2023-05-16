@@ -19,7 +19,7 @@ export const StyledSpan = styled.span`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: #6E7E91;
+  color: ${({theme}) => theme.switch.span};
   width: 100px;
 
   @media(max-width: 1260px) {
@@ -33,8 +33,8 @@ export const StyledSwitch = styled.div`
   width: 48px;
   height: 26px;
   border-radius: 32px;
-  background: #E5E5E5;
-  border: 1px solid rgba(209, 213, 218, 0.3);
+  background: ${({theme}) => theme.switch.background};
+  border: 1px solid ${({theme}) => theme.switch.border};
 
   @media(max-width: 1260px) {
        width: calc(48 / 1260 * 100vw);
@@ -50,7 +50,7 @@ export const StyledSwitch = styled.div`
     border-radius: 35px;
     top: 50%;
     left: 4px;
-    background: #6E7E91;
+    background: ${({theme}) => theme.switch.beforebackground};
     background-image: url(${darkModeIcon});
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ export const StyledInput = styled.input`
   &:checked + ${StyledSwitch} {
     
     &:before {
-        background: #6E7E91;
+        background: ${({theme}) => theme.switch.inputbackground};
         transform: translate(100%, -50%);
         background-image: url(${lightModeIcon});
         background-position: center;

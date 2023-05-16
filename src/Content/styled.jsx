@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const StyledDiv = styled.div`
-    background: #FFFFFF;
-    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+    background: ${({ theme }) => theme.content.div};
+    box-shadow: 0px -2px 50px ${({ theme }) => theme.content.boxshadow1}, 
+        0px 16px 58px ${({ theme }) => theme.content.boxshadow2};
     border-radius: 4px;
     margin: 36px 0;
     padding: 32px;
@@ -18,7 +19,7 @@ export const StyledTitle = styled.div`
     font-size: 36px;
     line-height: 36px;
     letter-spacing: 0.05em;
-    color: #252525;
+    color: ${({ theme }) => theme.content.title};
     border-bottom: 2px rgba(209, 213, 218, 0.3) solid;
     padding-bottom: 15px;
 
@@ -34,7 +35,7 @@ export const StyledContent = styled.ul`
     list-style-position: inside;
     padding: 14px 0 0 0;
     list-style-type: none;
-    color: #6E7E91;
+    color: ${({ theme }) => theme.content.content};
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
@@ -55,7 +56,7 @@ export const StyledLi = styled.li`
      display: inline-block; 
      width: 9px; 
      height: 9px; 
-     background-color: #0366D6;;
+     background-color: ${({theme}) => theme.content.list};
      border-radius: 50%;
      margin-right: 16px;
 

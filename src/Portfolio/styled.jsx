@@ -22,6 +22,7 @@ export const StyledTitle = styled.div`
     line-height: 36px;
     letter-spacing: 0.05em;
     margin: 12px 0 8px 0;
+    color: ${({theme}) => theme.portfolio.title};
 
     @media(max-width: 1260px) {
         font-size: calc(30 / 1260 * 100vw);
@@ -36,6 +37,7 @@ export const StyledHeader = styled.div`
     line-height: 140%;
     letter-spacing: 0.05em;
     margin-bottom: 24px;
+    color: ${({theme}) => theme.portfolio.header};
 
     @media(max-width: 1260px) {
         font-size: calc(20 / 1260 * 100vw);
@@ -56,22 +58,22 @@ export const StyledGridProjects = styled.div`
 export const StyledProject = styled.div`
     max-width: 480px;
     padding: 56px;
-    background: #FFFFFF;
-    border: 6px solid rgba(209, 213, 218, 0.3);
+    background: ${({theme}) => theme.portfolio.project};
+    border: 6px solid ${({theme}) => theme.portfolio.border};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
     transition: 0.2s ;
 
     @media(max-width: 1260px) {
         padding: calc(56 / 1260 * 100vw);
-        border: calc(6 / 1260 * 100vw) solid rgba(209, 213, 218, 0.3);
+        border: calc(6 / 1260 * 100vw) solid ${({theme}) => theme.portfolio.border};
     }
 
     &:hover{
-        border: 6px solid rgb(3, 102, 214, 0.2);
+        border: 6px solid ${({theme}) => theme.portfolio.hover};
 
         @media(max-width: 1260px) {
-        border: calc(6 / 1260 * 100vw) solid rgb(3, 102, 214, 0.2);
+        border: calc(6 / 1260 * 100vw) solid ${({theme}) => theme.portfolio.hover};
     }
     }
 `
@@ -82,7 +84,7 @@ export const StyledProjectTitle = styled.div`
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.05em;
-    color: #0366D6;
+    color: ${({theme}) => theme.portfolio.projecttitle};
     text-transform: capitalize;
 
     @media(max-width: 1260px) {
@@ -98,7 +100,7 @@ export const StyledProjectDescription = styled.div`
     line-height: 140%;
     display: flex;
     align-items: center;
-    color: #6E7E91;
+    color: ${({theme}) => theme.portfolio.description};
     padding-bottom: 16px;
 
     @media(max-width: 1260px) {
@@ -117,7 +119,7 @@ export const StyledProjectLinks = styled.div`
     display: flex;
     align-items: center;
     letter-spacing: 0.05em;
-    color: #6E7E91;
+    color: ${({theme}) => theme.portfolio.links};
 
     @media(max-width: 1260px) {
         gap: calc(8 / 1260 * 100vw);
@@ -131,7 +133,7 @@ export const StyledProjectLink = styled.a`
     font-size: 18px;
     line-height: 140%;
     align-items: center;
-    color: #2188FF;
+    color: ${({theme}) => theme.portfolio.link};
     text-decoration: none;
     border-bottom: 1px solid rgb(3, 102, 214, 0.2);
 

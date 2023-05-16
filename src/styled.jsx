@@ -10,26 +10,26 @@ const GlobalStyled = createGlobalStyle`
     ::before, ::after {
         box-sizing: inherit;
     }
-
-    body {
-        background-color: #FBFBFE;
-    }
 `
 
 export default GlobalStyled;
+
+export const Container = styled.div`
+    background-color: ${({ theme }) => theme.container.background};
+`
 
 export const StyledApp = styled.div`
     max-width: 1216px;
     padding: 115px 15px;
     margin: auto;
-    background-color: #FBFBFE;
+    background-color: ${({ theme }) => theme.app.background};
     font-family: 'Inter';
     font-style: normal;
 `
 
 export const StyledGitHubIcon = styled(Icon)`
     ${({ link }) => !link && css`
-    color: #0366D6;
+    color: ${({ theme }) => theme.app.githubicon};
 
     @media(max-width: 1260px) {
         width: calc(48 / 1260 * 100vw);
@@ -38,10 +38,10 @@ export const StyledGitHubIcon = styled(Icon)`
     `}
 
     ${({ link }) => link && css`
-    color: #252525;
+    color: ${({ theme }) => theme.app.githubiconfooter};
     
          &:hover {
-        color: #0366D6;
+            color: ${({ theme }) => theme.app.githubicon};
     }
 
     @media(max-width: 1260px) {

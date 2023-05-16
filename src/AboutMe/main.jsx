@@ -8,8 +8,7 @@ import StyledContainer,
 import tick from '../images/tick.svg';
 import me from '../images/me.jpg'
 
-const AboutMe = ({ email }) => {
-
+const AboutMe = ({ email, theme, dispatch }) => {
     return (
         <StyledContainer>
             <StyledImgContainer>
@@ -32,7 +31,7 @@ const AboutMe = ({ email }) => {
                     </StyledContent>
                 </StyledButton>
             </StyledDiv>
-            <Theme />
+            <Theme theme={theme} dispatch={dispatch}/>
         </StyledContainer>
     )
 }

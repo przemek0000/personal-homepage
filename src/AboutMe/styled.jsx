@@ -40,7 +40,7 @@ export const StyledTitle = styled.div`
     font-size: 12px;
     line-height: 130%;
     text-transform: uppercase;
-    color: #6E7E91;
+    color: ${({ theme }) => theme.aboutMe.titleDescription};
 
     @media(max-width: 1260px) {
        font-size: calc(12 / 1260 * 100vw);
@@ -52,7 +52,7 @@ export const StyledName = styled.div`
     font-size: 38px;
     line-height: 46px;
     letter-spacing: 0.05em;
-    color: #252525;
+    color: ${({ theme }) => theme.aboutMe.name};
     padding: 12px 0 35px;
 
     @media(max-width: 1260px) {
@@ -66,7 +66,7 @@ export const StyledDescription = styled.div`
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    color: #6E7E91;
+    color: ${({ theme }) => theme.aboutMe.titleDescription};
     padding: 0 0 32px;
 
     @media(max-width: 1260px) {
@@ -82,7 +82,7 @@ export const StyledButton = styled.a`
     align-items: center;
     gap: 16px;
     background: #0366D6;
-    border: 1px solid rgba(209, 213, 218, 0.3);
+    border: 1px solid ${({ theme }) => theme.aboutMe.buttonborder};
     border-radius: 4px;
     color: #FFFFFF;
     font-weight: 600;
@@ -94,11 +94,14 @@ export const StyledButton = styled.a`
 
     &:hover{
         cursor: pointer;
-        box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
+        box-shadow: 2px -2px 0px ${({ theme }) => theme.aboutMe.buttonshadow}, 
+        -2px 2px 0px ${({ theme }) => theme.aboutMe.buttonshadow}, 
+        2px 2px 0px ${({ theme }) => theme.aboutMe.buttonshadow}, 
+        -2px -2px 0px ${({ theme }) => theme.aboutMe.buttonshadow};
     }
 
     &:active{
-        box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
+        box-shadow: inset 0px 2px 0px ${({ theme }) => theme.aboutMe.buttonactive};
     }
 
     @media(max-width: 1260px) {

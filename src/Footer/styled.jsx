@@ -16,7 +16,7 @@ export const StyledTitle = styled.div`
     font-size: 12px;
     line-height: 130%;
     text-transform: uppercase;
-    color: #6E7E91;
+    color: ${({theme}) => theme.footer.title};
     padding-bottom: 24px;
 
     @media(max-width: 1260px) {
@@ -30,7 +30,7 @@ export const StyledEmail = styled.a`
     font-size: 32px;
     line-height: 39px;
     letter-spacing: 0.05em;
-    color: #252525;
+    color: ${({theme}) => theme.footer.email};
     text-decoration: none;
 
     @media(max-width: 1260px) {
@@ -38,7 +38,7 @@ export const StyledEmail = styled.a`
     }
 
     &:hover {
-        color: #0366D6;
+        color: ${({theme}) => theme.footer.hover};
     }
 `
 
@@ -48,7 +48,7 @@ export const StyledDescription = styled.div`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    color: #252525;
+    color: ${({theme}) => theme.footer.description};
 
     @media(max-width: 1260px) {
         padding: calc(24 / 1260 * 100vw) 0 calc(56 / 1260 * 100vw) 0;
