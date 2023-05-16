@@ -135,7 +135,7 @@ export const StyledProjectLink = styled.a`
     align-items: center;
     color: ${({theme}) => theme.portfolio.link};
     text-decoration: none;
-    border-bottom: 1px solid rgb(3, 102, 214, 0.2);
+    border-bottom: 1px solid ${({theme}) => theme.portfolio.linkborder};
 
     @media(max-width: 1260px) {
         font-size: calc(18 / 1260 * 100vw);

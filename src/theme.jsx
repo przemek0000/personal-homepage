@@ -32,7 +32,8 @@ export const lightTheme = {
         projecttitle: "#0366D6",
         description: "#6E7E91",
         links: "#6E7E91",
-        link: "#2188FF"
+        link: "#0366D6",
+        linkborder: "rgb(3, 102, 214, 0.2)"
     },
     footer: {
         title: "#6E7E91",
@@ -83,12 +84,13 @@ export const darkTheme = {
         projecttitle: "#FFFFFF",
         description: "ffffff",
         links: "#FFFFFF",
-        link: "#2188FF"
+        link: "#2188FF",
+        linkborder: "#2188FF"
     },
     footer: {
         title: "#FFFFFF",
         email: "#FFFFFF",
-        hover: "#FFFFFF",
+        hover: "#2188FF",
         description: "#FFFFFF"
     },
     switch: {
