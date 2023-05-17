@@ -11,10 +11,10 @@ export const StyledGridProjects = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
       gap: 8px;
-      margin: 0 16px;
+      
     }
 
-     @media(max-width: 660px) {
+     @media(max-width: ${({theme}) => theme.breakpoints.phones}) {
         grid-template-columns: repeat(1, 1fr);
     }
 `
