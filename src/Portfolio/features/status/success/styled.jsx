@@ -14,7 +14,7 @@ export const StyledGridProjects = styled.div`
       
     }
 
-     @media(max-width: ${({theme}) => theme.breakpoints.phones}) {
+     @media(max-width: ${({theme}) => theme.breakpoints.phones}px) {
         grid-template-columns: repeat(1, 1fr);
     }
 `
@@ -53,7 +53,7 @@ export const StyledProject = styled.div`
 `
 
 export const StyledProjectTitle = styled.div`
-    margin-bottom: 0 0 24px 0;
+    padding-bottom: 24px;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
