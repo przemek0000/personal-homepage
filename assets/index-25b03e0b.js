@@ -456,7 +456,7 @@ Error generating stack: `+i.message+`
 
     @media(max-width: ${({theme:e})=>e.breakpoints.tablets}px) {
         font-size: 17px;
-        margin-bottom: 0px;
+        margin-bottom: 24px;
     }
 `,y0=s0({name:"projects",initialState:{projects:[],status:"initial"},reducers:{axiosProjectsLoading:(e,{payload:t})=>({projects:t,status:"loading"}),axiosPojectsSuccess:(e,{payload:t})=>({projects:t,status:"success"}),axiosProjectsError:()=>({projects:[],status:"error"})}}),w0=e=>e.projects,Jw=e=>w0(e).projects,Zw=e=>w0(e).status,{axiosProjectsLoading:x0,axiosPojectsSuccess:ex,axiosProjectsError:tx}=y0.actions,nx=y0.reducer,rx=M.div`
     text-align: center;
@@ -581,10 +581,10 @@ to {
 
     @media(max-width: ${({theme:e})=>e.breakpoints.tablets}px) {
       gap: 8px;
-      margin: 0 16px;
+      
     }
 
-     @media(max-width: 660px) {
+     @media(max-width: ${({theme:e})=>e.breakpoints.phones}px) {
         grid-template-columns: repeat(1, 1fr);
     }
 `,mx=M.div`
@@ -619,7 +619,7 @@ to {
     }
     }
 `,vx=M.div`
-    margin-bottom: 0 0 24px 0;
+    padding-bottom: 24px;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -629,13 +629,13 @@ to {
     text-transform: capitalize;
 
     @media(max-width: 1260px) {
-        margin-bottom: calc(24 / 1260 * 100vw);
+        padding-bottom: calc(24 / 1260 * 100vw);
         font-size: calc(24 / 1260 * 100vw);
         line-height: calc(29 / 1260 * 100vw);
     }
 
     @media(max-width: ${({theme:e})=>e.breakpoints.tablets}px) {
-        margin-bottom: 0 0 16px 0;
+        padding-bottom: 16px;
         font-size: 16px;
         line-height: 19px;
     }
