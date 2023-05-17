@@ -41,6 +41,7 @@ export const StyledTitle = styled.div`
     line-height: 130%;
     text-transform: uppercase;
     color: ${({ theme }) => theme.aboutMe.titleDescription};
+    transition: ${({theme}) => theme.transition}s;
 
     @media(max-width: 1260px) {
        font-size: calc(12 / 1260 * 100vw);
@@ -53,6 +54,7 @@ export const StyledName = styled.div`
     line-height: 46px;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.aboutMe.name};
+    transition: ${({theme}) => theme.transition}s;
     padding: 12px 0 35px;
 
     @media(max-width: 1260px) {
@@ -67,6 +69,7 @@ export const StyledDescription = styled.div`
     line-height: 140%;
     letter-spacing: 0.05em;
     color: ${({ theme }) => theme.aboutMe.titleDescription};
+    transition: ${({theme}) => theme.transition}s;
     padding: 0 0 32px;
 
     @media(max-width: 1260px) {
@@ -83,6 +86,7 @@ export const StyledButton = styled.a`
     gap: 16px;
     background: #0366D6;
     border: 1px solid ${({ theme }) => theme.aboutMe.buttonborder};
+    transition: ${({theme}) => theme.transition}s;
     border-radius: 4px;
     color: #FFFFFF;
     font-weight: 600;

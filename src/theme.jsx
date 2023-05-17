@@ -1,4 +1,5 @@
 export const lightTheme = {
+    transition: 0.2,
     container: {
         background: "#FBFBFE"
     },
@@ -47,10 +48,18 @@ export const lightTheme = {
         border: "rgba(209, 213, 218, 0.3)",
         beforebackground: "#6E7E91",
         inputbackground: "#6E7E91"
+    },
+    errorpage: {
+        color: "#252525",
+        sign: "#252525"
+    },
+    loadingpage: {
+        color: "#252525"
     }
 }
 
 export const darkTheme = {
+    transition: 0.2,
     container: {
         background: "#252525"
     },
@@ -82,7 +91,7 @@ export const darkTheme = {
         hover: "rgba(3, 102, 214, 0.5)",
         border: "rgba(209, 213, 218, 0.1)",
         projecttitle: "#FFFFFF",
-        description: "ffffff",
+        description: "#ffffff",
         links: "#FFFFFF",
         link: "#2188FF",
         linkborder: "#2188FF"
@@ -95,9 +104,16 @@ export const darkTheme = {
     },
     switch: {
         span: "#FFFFFF",
-        background: "rgba(54, 54, 54, 0.72)",
-        border: "#ffffff",
+        background: "rgb(229, 229, 229, 0.3)",
+        border: "#FFFFFF",
         beforebackground: "#6E7E91",
         inputbackground: "#6E7E91"
+    },
+    errorpage: {
+        color: "#FFFFFF",
+        sign: "#FFFFFF"
+    },
+    loadingpage: {
+        color: "#FFFFFF"
     }
 }

@@ -42,7 +42,7 @@ export const StyledSwitch = styled.div`
     }
 
   &:before {
-    transition: 300ms;
+    transition: ${({theme}) => theme.transition}s;
     content: "";
     position: absolute;
     width: 20px;

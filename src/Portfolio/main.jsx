@@ -1,41 +1,11 @@
 import { useSelector } from "react-redux";
 import {
-    StyledPortfolio, StyledHeader, StyledTitle,
-    StyledGridProjects, StyledProject, StyledProjectTitle,
-    StyledProjectDescription, StyledProjectLinks, StyledProjectLink
+    StyledPortfolio, StyledHeader, StyledTitle
 } from "./styled";
 import { selectProjects, selectProjectsStatus } from "../features/api/getProjectsSlice";
 import displayLoading from "./features/status/loading/main";
 import displayError from "./features/status/error/main";
-
-const displayProjects = (getProjects) => {
-    return (
-        <StyledGridProjects>
-            {getProjects.map(project => (
-                <StyledProject key={project.id}>
-                    <StyledProjectTitle>
-                        {project.name}
-                    </StyledProjectTitle>
-                    <StyledProjectDescription>
-                        {project.description}
-                    </StyledProjectDescription>
-                    <StyledProjectLinks>
-                        Demo:
-                        <StyledProjectLink href={`${project.homepage}`} target="_blank" rel="noreferrer">
-                            https://link.demo.com
-                        </StyledProjectLink>
-                    </StyledProjectLinks>
-                    <StyledProjectLinks>
-                        Code:
-                        <StyledProjectLink href={`${project.html_url}`} target="_blank" rel="noreferrer">
-                            https://link.code.com
-                        </StyledProjectLink>
-                    </StyledProjectLinks>
-                </StyledProject>
-            ))}
-        </StyledGridProjects>
-    )
-}
+import displayProjects from "./features/status/success/main";
 
 export const Portfolio = ({ GitHubIcon, title, header, git }) => {
     const getStatus = useSelector(selectProjectsStatus);

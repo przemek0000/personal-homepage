@@ -14,8 +14,8 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledErrorSign = styled(ErrorIcon)`
+    color: ${({theme}) => theme.errorpage.sign};
     margin: 88px 0 24px 0;
-
     @media(max-width: 1260px) {
         margin: calc(88 / 1260 * 100vw) 0 calc(24 / 1260 * 100vw) 0;
         width: ${"calc(37px / 1260 * 100vw)"};
@@ -28,7 +28,7 @@ export const StyledTitle = styled.div`
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.05em;
-    color: #252525;
+    color: ${({theme}) => theme.errorpage.color};
 
     @media(max-width: 1260px) {
         line-height: calc(29 / 1260 * 100vw);
@@ -43,7 +43,7 @@ export const StyledContent = styled.div`
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    color: #252525;
+    color: ${({theme}) => theme.errorpage.color};
 
     @media(max-width: 1260px) {
         margin: calc(32 / 1260 * 100vw) 0 calc(32 / 1260 * 100vw) 0;

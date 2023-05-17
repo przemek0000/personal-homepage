@@ -5,7 +5,7 @@ export const StyledTitle = styled.div`
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.05em;
-    color: #252525;
+    color: ${({theme}) => theme.loadingpage.color};
 
     @media(max-width: 1260px) {
         margin: calc(64 / 1260 * 100vw) 0 calc(48 / 1260 * 100vw) 0;

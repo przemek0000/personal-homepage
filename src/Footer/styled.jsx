@@ -17,6 +17,7 @@ export const StyledTitle = styled.div`
     line-height: 130%;
     text-transform: uppercase;
     color: ${({theme}) => theme.footer.title};
+    transition: ${({theme}) => theme.transition}s;
     padding-bottom: 24px;
 
     @media(max-width: 1260px) {
@@ -26,6 +27,7 @@ export const StyledTitle = styled.div`
 `
 
 export const StyledEmail = styled.a`
+width: 100%;
     font-weight: 900;
     font-size: 32px;
     line-height: 39px;
@@ -49,6 +51,7 @@ export const StyledDescription = styled.div`
     line-height: 140%;
     letter-spacing: 0.05em;
     color: ${({theme}) => theme.footer.description};
+    transition: ${({theme}) => theme.transition}s;
 
     @media(max-width: 1260px) {
         padding: calc(24 / 1260 * 100vw) 0 calc(56 / 1260 * 100vw) 0;

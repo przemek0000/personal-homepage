@@ -16,6 +16,7 @@ export default GlobalStyled;
 
 export const Container = styled.div`
     background-color: ${({ theme }) => theme.container.background};
+    transition: ${({theme}) => theme.transition}s;
 `
 
 export const StyledApp = styled.div`
@@ -23,6 +24,7 @@ export const StyledApp = styled.div`
     padding: 115px 15px;
     margin: auto;
     background-color: ${({ theme }) => theme.app.background};
+    transition: ${({theme}) => theme.transition}s;
     font-family: 'Inter';
     font-style: normal;
 `
@@ -30,6 +32,7 @@ export const StyledApp = styled.div`
 export const StyledGitHubIcon = styled(Icon)`
     ${({ link }) => !link && css`
     color: ${({ theme }) => theme.app.githubicon};
+    transition: ${({theme}) => theme.transition}s;
 
     @media(max-width: 1260px) {
         width: calc(48 / 1260 * 100vw);
