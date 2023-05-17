@@ -42,6 +42,6 @@ export const StyledHeader = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
         font-size: 17px;
-        margin-bottom: 0px;
+        margin-bottom: 24px;
     }
 `

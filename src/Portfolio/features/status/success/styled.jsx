@@ -63,13 +63,13 @@ export const StyledProjectTitle = styled.div`
     text-transform: capitalize;
 
     @media(max-width: 1260px) {
-        margin-bottom: calc(24 / 1260 * 100vw);
+        padding-bottom: calc(24 / 1260 * 100vw);
         font-size: calc(24 / 1260 * 100vw);
         line-height: calc(29 / 1260 * 100vw);
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
-        margin-bottom: 0 0 16px 0;
+        padding-bottom: 16px;
         font-size: 16px;
         line-height: 19px;
     }
