@@ -1,5 +1,9 @@
 export const lightTheme = {
     transition: 0.2,
+    breakpoints: {
+        tablets: 768,
+        phones: 660
+    },
     container: {
         background: "#FBFBFE"
     },
@@ -60,6 +64,10 @@ export const lightTheme = {
 
 export const darkTheme = {
     transition: 0.2,
+    breakpoints:{
+        tablets: 768,
+        phones: 660
+    },
     container: {
         background: "#252525"
     },

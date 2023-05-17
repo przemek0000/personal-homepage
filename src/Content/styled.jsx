@@ -6,12 +6,17 @@ export const StyledDiv = styled.div`
     box-shadow: 0px -2px 50px ${({ theme }) => theme.content.boxshadow1}, 
         0px 16px 58px ${({ theme }) => theme.content.boxshadow2};
     border-radius: 4px;
-    margin: 36px 0;
+    margin: 73px 0 72px 0;
     padding: 32px;
 
     @media(max-width: 1260px) {
-        margin: calc(36 / 1260 * 100vw) 0;
+        margin: calc(73 / 1260 * 100vw) 0 calc(72 / 1260 * 100vw);
         padding: calc(32 / 1260 * 100vw);
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        margin: 48px 0 50px 0;
+        
     }
 `
 
@@ -28,6 +33,12 @@ export const StyledTitle = styled.div`
     @media(max-width: 1260px) {
         font-size: calc(36 / 1260 * 100vw);
         padding-bottom: calc(15 / 1260 * 100vw);
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 12px;
     }
 `
 
@@ -49,6 +60,18 @@ export const StyledContent = styled.ul`
         font-size: calc(18 / 1260 * 100vw);
         padding: calc(14 / 1260 * 100vw) 0 0 0;
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 14px;
+        line-height: 17px;
+        padding: 12px 0 0 0;
+        margin: 0;
+    }
+
+    @media(max-width:${({theme}) => theme.breakpoints.phones}px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const StyledLi = styled.li`
@@ -68,6 +91,12 @@ export const StyledLi = styled.li`
         width: calc(9 / 1260 * 100vw);
         height: calc(9 / 1260 * 100vw);
         margin-right: calc(16 / 1260 * 100vw);
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        width: 6px;
+        height: 6px;
+        margin-right: 8px;
     }
 }
 `

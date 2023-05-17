@@ -6,16 +6,6 @@ export const StyledPortfolio = styled.div`
     align-items: center;
 `
 
-export const GitImage = styled.img`
-    width: 40px;
-    height: 40px;
-
-    @media(max-width: 1260px) {
-        width: calc(40 / 1260 * 100vw);
-        height: calc(40 / 1260 * 100vw);
-    }
-`
-
 export const StyledTitle = styled.div`
     font-weight: 900;
     font-size: 30px;
@@ -28,6 +18,12 @@ export const StyledTitle = styled.div`
         font-size: calc(30 / 1260 * 100vw);
         line-height: calc(36 / 1260 * 100vw);
         margin: calc(12 / 1260 * 100vw) 0 calc(8 / 1260 * 100vw) 0;
+    }
+    
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 12px 0 16px 0;
     }
 `
 
@@ -42,5 +38,10 @@ export const StyledHeader = styled.div`
     @media(max-width: 1260px) {
         font-size: calc(20 / 1260 * 100vw);
         margin-bottom: calc(24 / 1260 * 100vw);
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        font-size: 17px;
+        margin-bottom: 0px;
     }
 `

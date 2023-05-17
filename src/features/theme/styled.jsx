@@ -4,6 +4,11 @@ import lightModeIcon from "../../images/lightmode.svg";
 
 const StyledTheme = styled.div`
   white-space: nowrap;
+  
+  @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        order: -1;
+        align-self: flex-end;
+    }
 `
 
 export default StyledTheme;
@@ -19,12 +24,16 @@ export const StyledSpan = styled.span`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: ${({theme}) => theme.switch.span};
+  color: ${({ theme }) => theme.switch.span};
   width: 100px;
 
   @media(max-width: 1260px) {
         font-size: calc(12 / 1260 * 100vw);
         width: calc(100 / 1260 * 100vw);
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        display: none;
     }
 `
 
@@ -33,16 +42,21 @@ export const StyledSwitch = styled.div`
   width: 48px;
   height: 26px;
   border-radius: 32px;
-  background: ${({theme}) => theme.switch.background};
-  border: 1px solid ${({theme}) => theme.switch.border};
+  background: ${({ theme }) => theme.switch.background};
+  border: 1px solid ${({ theme }) => theme.switch.border};
 
   @media(max-width: 1260px) {
        width: calc(48 / 1260 * 100vw);
        height: calc(26 / 1260 * 100vw);
     }
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+      width: 47px;
+      height: 25px;
+    }
+
   &:before {
-    transition: ${({theme}) => theme.transition}s;
+    transition: ${({ theme }) => theme.transition}s;
     content: "";
     position: absolute;
     width: 20px;
@@ -50,7 +64,7 @@ export const StyledSwitch = styled.div`
     border-radius: 35px;
     top: 50%;
     left: 4px;
-    background: ${({theme}) => theme.switch.beforebackground};
+    background: ${({ theme }) => theme.switch.beforebackground};
     background-image: url(${darkModeIcon});
     background-position: center;
     background-repeat: no-repeat;
@@ -63,6 +77,13 @@ export const StyledSwitch = styled.div`
         left: calc(4 / 1260 * 100vw);
         background-size: calc(14 / 1260 * 100vw) calc(14 / 1260 * 100vw);
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+      width: 20px;
+      height: 20px;
+      left: 4px;
+      background-size: 14px 14px;
+    }
   }
 `
 
@@ -74,7 +95,7 @@ export const StyledInput = styled.input`
   &:checked + ${StyledSwitch} {
     
     &:before {
-        background: ${({theme}) => theme.switch.inputbackground};
+        background: ${({ theme }) => theme.switch.inputbackground};
         transform: translate(100%, -50%);
         background-image: url(${lightModeIcon});
         background-position: center;
@@ -85,10 +106,10 @@ export const StyledInput = styled.input`
         @media(max-width: 1260px) {
         background-size: calc(14 / 1260 * 100vw) calc(14 / 1260 * 100vw);
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+      background-size: 14px 14px;
+      }
      }
   }
-  @media(max-width: 1260px) {
-        width: calc(12 / 1260 * 100vw);
-        background-size: calc(14 / 1260 * 100vw) calc(14 / 1260 * 100vw);
-    }
 `

@@ -8,6 +8,15 @@ export const StyledGridProjects = styled.div`
     @media(max-width: 1260px) {
         gap: calc(32 / 1260 * 100vw);
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+      gap: 8px;
+      margin: 0 16px;
+    }
+
+     @media(max-width: 660px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const StyledProject = styled.div`
@@ -25,17 +34,26 @@ export const StyledProject = styled.div`
         border: calc(6 / 1260 * 100vw) solid ${({theme}) => theme.portfolio.border};
     }
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        padding: 24px;
+        border-radius: 4px;
+    }
+
     &:hover{
         border: 6px solid ${({theme}) => theme.portfolio.hover};
 
         @media(max-width: 1260px) {
         border: calc(6 / 1260 * 100vw) solid ${({theme}) => theme.portfolio.hover};
+     }
+
+     @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        border-radius: 4px;
     }
     }
 `
 
 export const StyledProjectTitle = styled.div`
-    margin-bottom: 24px;
+    margin-bottom: 0 0 24px 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -48,6 +66,12 @@ export const StyledProjectTitle = styled.div`
         margin-bottom: calc(24 / 1260 * 100vw);
         font-size: calc(24 / 1260 * 100vw);
         line-height: calc(29 / 1260 * 100vw);
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        margin-bottom: 0 0 16px 0;
+        font-size: 16px;
+        line-height: 19px;
     }
 `
 
@@ -64,6 +88,12 @@ export const StyledProjectDescription = styled.div`
     @media(max-width: 1260px) {
         font-size: calc(18 / 1260 * 100vw);
         padding-bottom: calc(16 / 1260 * 100vw);
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        font-size: 14px;
+        line-height: 17px;
+        padding-bottom: 16px;
     }
 `
 
@@ -84,6 +114,13 @@ export const StyledProjectLinks = styled.div`
         padding: calc(8 / 1260 * 100vw) 0;
         font-size: calc(18 / 1260 * 100vw);
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        padding: 10px 0;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 17px;
+    }
 `
 
 export const StyledProjectLink = styled.a`
@@ -97,5 +134,10 @@ export const StyledProjectLink = styled.a`
 
     @media(max-width: 1260px) {
         font-size: calc(18 / 1260 * 100vw);
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
+        font-size: 14px;
+        line-height: 17px;
     }
 `

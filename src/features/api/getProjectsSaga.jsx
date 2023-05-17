@@ -6,7 +6,7 @@ function* axiosProjectsHandler() {
     try {
         yield delay(1000);
         const projects = yield call(getProjectsApi);
-        // const projects = [{ id: 1, name: "test 1" }, { id: 2, name: "test 2" }];
+        // const projects = [{ id: 1, name: "test 1", description: "sdfdf" }, { id: 2, name: "test 2", description: "sdfdf" }];
         yield put(axiosPojectsSuccess(projects));
     } catch (error) {
         yield put(axiosProjectsError());
