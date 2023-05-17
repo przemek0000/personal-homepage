@@ -4,7 +4,8 @@ const wantToLearn = [
     "Solid.js",
     "Rust",
     "Julia",
-    "Web3"
+    "Linux",
+    "Cybersecurity"
 ];
 
 export default wantToLearn;

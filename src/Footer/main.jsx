@@ -15,8 +15,8 @@ const Footer = ({ GitHubIcon, email, git }) => {
                 </StyledEmail>
             </div>
             <StyledDescription>
-                I'm always open to new projects whenever I have the time.
-                If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me
+                I spend every free time to improve my programming skills.
+                If You are interested work with me just let me know.
             </StyledDescription>
             <StyledIcon href={`${git}`} target="_blank" rel="noreferrer">
                 {GitHubIcon}

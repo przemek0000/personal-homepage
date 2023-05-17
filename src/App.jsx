@@ -14,7 +14,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
 
 function App() {
-  const email = "test@email.gmail"
+  const email = "webdev.solid@gmail";
   const git = "https://github.com/przemek0000";
   const dispatch = useDispatch();
   const theme = useSelector(selectTheme);
