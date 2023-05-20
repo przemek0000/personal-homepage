@@ -162,9 +162,9 @@ Error generating stack: `+i.message+`
      flex-direction: column;
     }
 `,qy=M.div`
-    max-width: 400px;
     width: 100%;
-
+    max-width: 367px;
+    
     @media(max-width: ${({theme:e})=>e.breakpoints.tablets}px) {
         max-width: 200px;
     }
@@ -176,7 +176,6 @@ Error generating stack: `+i.message+`
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
-    background-size: cover;
 `,Zy=M.div`
     display: flex;
     position: relative;
@@ -309,7 +308,7 @@ Error generating stack: `+i.message+`
         width: 20px;
         height: 20px;
     }
-`,iw="/personal-homepage/assets/tick-682d4ab2.svg",lw="/personal-homepage/assets/me-f91f69bb.jpg",uw=({email:e,theme:t,dispatch:n})=>F.jsxs(Xy,{children:[F.jsx(qy,{children:F.jsx(Jy,{src:lw,alt:"Image"})}),F.jsxs(Zy,{children:[F.jsx(ew,{children:"This is"}),F.jsx(tw,{children:"Przemyslaw Gajczewski"}),F.jsx(nw,{children:"My frontend developer skills allow to build elegant and functional applications. I put a lot of effort into every project, ensuring that it meets expectations."}),F.jsxs(f0,{href:`mailto:${e}`,children:[F.jsx(ow,{src:iw,alt:"tick"}),F.jsx(rw,{children:"Hire Me"})]})]}),F.jsx(Yy,{theme:t,dispatch:n})]}),aw=M.div`
+`,iw="/personal-homepage/assets/tick-682d4ab2.svg",lw="/personal-homepage/assets/me-3bc0fa6b.jpg",uw=({email:e,theme:t,dispatch:n})=>F.jsxs(Xy,{children:[F.jsx(qy,{children:F.jsx(Jy,{src:lw,alt:"Image"})}),F.jsxs(Zy,{children:[F.jsx(ew,{children:"This is"}),F.jsx(tw,{children:"Przemyslaw Gajczewski"}),F.jsx(nw,{children:"My frontend developer skills allow to build elegant and functional applications. I put a lot of effort into every project, ensuring that it meets expectations."}),F.jsxs(f0,{href:`mailto:${e}`,children:[F.jsx(ow,{src:iw,alt:"tick"}),F.jsx(rw,{children:"Hire Me"})]})]}),F.jsx(Yy,{theme:t,dispatch:n})]}),aw=M.div`
     background: ${({theme:e})=>e.content.div};
     transition: ${({theme:e})=>e.transition}s;
     box-shadow: 0px -2px 50px ${({theme:e})=>e.content.boxshadow1}, 
@@ -402,7 +401,7 @@ Error generating stack: `+i.message+`
         margin-right: 8px;
     }
 }
-`,ad=({title:e,content:t})=>{if(t)return F.jsxs(aw,{children:[F.jsx(sw,{children:e}),F.jsx(cw,{children:t.map((n,r)=>F.jsx(fw,{children:n},r))})]})},dw=["Semantic & accessible HTML","React Router","Promises, Async/Await","Responsive Web Design","Redux-Saga","GitHub Pull Requests & Review","Teamwork","Redux (Toolkit)","Trello","Markdown","React Hooks","Scrum","Immutability","Error handling","NPM","CSS BEM convention","Working with API (fetch, axios)","React","CSS Grid","JavaScript: ES6+","Git","CSS Flexbox"],pw=["TypeScript","Tanstack Query","Solid.js","Rust","Julia","Linux","Cybersecurity"];var Ka={},hw={get exports(){return Ka},set exports(e){Ka=e}},d0={};/**
+`,ad=({title:e,content:t})=>{if(t)return F.jsxs(aw,{children:[F.jsx(sw,{children:e}),F.jsx(cw,{children:t.map((n,r)=>F.jsx(fw,{children:n},r))})]})},dw=["Semantic & accessible HTML","React Router","Promises, Async/Await","Responsive Web Design","Redux-Saga","GitHub Pull Requests & Review","Teamwork","Redux (Toolkit)","Trello","Markdown","React Hooks","Scrum","Immutability","Error handling","NPM","CSS BEM convention","Working with API (fetch, axios)","React","CSS Grid","JavaScript: ES6+","Git","CSS Flexbox"],pw=["TypeScript","Tanstack Query","Solid.js","Rust","Node.js","Linux"];var Ka={},hw={get exports(){return Ka},set exports(e){Ka=e}},d0={};/**
  * @license React
  * use-sync-external-store-shim.production.min.js
  *
