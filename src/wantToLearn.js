@@ -3,9 +3,8 @@ const wantToLearn = [
     "Tanstack Query",
     "Solid.js",
     "Rust",
-    "Julia",
+    "Node.js",
     "Linux",
-    "Cybersecurity"
 ];
 
 export default wantToLearn;

@@ -11,9 +11,9 @@ const StyledContainer = styled.div`
 export default StyledContainer;
 
 export const StyledImgContainer = styled.div`
-    max-width: 400px;
     width: 100%;
-
+    max-width: 367px;
+    
     @media(max-width: ${({ theme }) => theme.breakpoints.tablets}px) {
         max-width: 200px;
     }
@@ -27,7 +27,6 @@ export const StyledImg = styled.img`
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
-    background-size: cover;
 `
 
 export const StyledDiv = styled.div`
